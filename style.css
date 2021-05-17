@@ -1,0 +1,126 @@
+/* ------------------ GERAL ------------------ */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+.row {
+	max-width: 100vw;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+/* ------------------ HEADER ------------------ */
+
+.titulo p {
+	text-align: center;
+	font-size: 3em;
+	font-weight: 700;
+	color: white;
+	padding: 30px;
+}
+
+.titulo {
+	max-width: 100%;
+}
+
+.menu {
+	background-color: #6c464f;
+}
+
+.menu a {
+	text-decoration: none !important;
+	color: black !important;
+	font-size: 1.2em;
+	border-bottom: 2px solid black;
+}
+
+.menu a:hover {
+	background-color: #6c464f;
+}
+
+.menu-2 {
+	background-color: white;
+}
+
+/* --------------- MAIN - EVENTOS -------------- */
+
+/* ------------- MAIN - GANHADORES ------------- */
+
+.card {
+	width: 300px;
+	padding: 20px;
+	border: 1px solid #c3909b;
+	border-radius: 30px;
+	background-color: #c3909b;
+}
+
+.card p {
+	text-align: justify;
+}
+
+img {
+	width: 100%;
+}
+
+.leia-mais {
+	width: 130px;
+	background: #6c464f;
+	border-radius: 30px;
+	padding: 5px 10px;
+}
+
+.leia-mais:hover {
+	background: #58383f;
+}
+
+.leia-mais a {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+}
+
+/* ------------- MAIN - JOGO ------------- */
+
+#jogo {
+	background-color: #b3cdd1;
+}
+
+.jogo {
+	width: 700px;
+	height: 400px;
+	background-color: #888;
+}
+
+.jogo p {
+	text-align: center;
+}
+
+/* ------------------ FOOTER ----------------- */
+
+#footer {
+	background-color: #9e768f;
+	padding: 30px;
+}
+
+#footer p {
+	text-align: center;
+}
