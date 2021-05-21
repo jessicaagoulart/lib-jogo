@@ -82,6 +82,14 @@ h3 {
 	text-align: justify;
 }
 
+#introducao a,
+#eventos a {
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: normal !important;
+}
+
 /* ------------- MAIN - JOGO ------------- */
 
 #jogo {
