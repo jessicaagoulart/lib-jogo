@@ -102,7 +102,7 @@ h2 a {
 	padding: 20px;
 	border: 1px solid #c3909b;
 	border-radius: 30px;
-	background-image: linear-gradient(#6c464f, #c3909b);
+	background-image: linear-gradient(#6c464f, #ca96a1, #cca7af);
 	box-shadow: 2px 2px 10px rgb(104, 56, 56);
 }
 
@@ -112,7 +112,7 @@ h2 a {
 
 .nome {
 	text-align: center !important;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 600;
 	margin-top: 5px;
 }
@@ -147,6 +147,9 @@ img {
 	font-weight: 500;
 }
 
+#videos {
+	background: #b3cdd1;
+}
 /* ------------- MAIN - JOGO ------------- */
 
 #jogo {
@@ -166,7 +169,7 @@ img {
 /* ------------------ FOOTER ----------------- */
 
 #footer {
-	background-color: #d3d3d3;
+	background-color: #b3cdd1;
 	padding: 30px;
 }
 
@@ -180,10 +183,78 @@ img {
 	width: 100%;
 }
 
+.cientistas {
+	transition: 0.5s all;
+}
+
+.cientistas:hover {
+	transform: scale(1.1);
+}
+
 .nome-cientistas p {
-	font-size: 1.5em;
+	font-size: 1.7em;
 }
 
 .titulo-2 p {
 	text-align: right;
+}
+
+.titulo-1,
+.titulo-2 {
+	margin-top: 10px;
+}
+
+/* ------------------ PAGINA SOBRE NOS ----------------- */
+
+.aluno p {
+	text-align: justify;
+}
+
+.aluno {
+	border: 3px solid #6c464f;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 1px 1px 2px;
+	transition: 0.5s all;
+	background: #fefefe;
+}
+
+.aluno:hover {
+	transform: scale(1.05);
+}
+
+.aluno h2 {
+	padding: 10px 0 10px;
+}
+
+#sobre-nos img {
+	width: 300px;
+	border: none;
+	border-radius: 0px;
+}
+/* ------------------ MEDIA QUERIES ----------------- */
+@media screen and (max-width: 768px) {
+	.titulo-1 p,
+	.titulo-2 p {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	.text p {
+		text-align: justify;
+	}
+
+	#eventos h1 {
+		margin-bottom: 30px;
+	}
+
+	#eventos p {
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.titulo {
+		font-size: 60%;
+	}
 }
