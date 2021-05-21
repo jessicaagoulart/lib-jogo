@@ -16,44 +16,20 @@ body {
 	overflow-x: hidden;
 }
 
-#introducao h1 {
-	text-transform: uppercase;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-h1,
 h2,
+h3,
 h3 {
 	text-align: center;
 }
 
-h2 a {
-	text-decoration: none;
-	font-size: 1em;
-	color: black !important;
-}
-
-#eventos h2 {
-	transition: 0.5s all;
-}
-
-#eventos h2:hover {
-	transform: scale(1.1);
-}
-
 /* ------------------ HEADER ------------------ */
 
-.titulo p {
+.menu h1 {
 	text-align: center;
 	font-size: 3em;
 	font-weight: 700;
 	color: white;
 	padding: 30px;
-}
-
-.titulo {
-	max-width: 100%;
 }
 
 .menu {
@@ -90,7 +66,64 @@ h2 a {
 	height: 100%;
 }
 
+/* --------------- MAIN - INTRODUCAO -------------- */
+
+#introducao h2 {
+	text-transform: uppercase;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#introducao {
+	margin: 40px auto;
+}
+
+#introducao p {
+	text-align: justify;
+}
+
+/* ------------- MAIN - JOGO ------------- */
+
+#jogo {
+	background-color: #d1e0e2;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+}
+
+#jogo iframe {
+	width: 600px;
+	align-self: center;
+	margin-bottom: 40px;
+	box-shadow: 0px 1px 5px #777;
+}
+
+.jogo {
+	width: 700px;
+	height: 400px;
+	box-shadow: 0px 1px 5px #666;
+}
+
+.jogo p {
+	text-align: center;
+}
+
 /* --------------- MAIN - EVENTOS -------------- */
+
+h3 a {
+	text-decoration: none;
+	font-size: 1em;
+	color: black !important;
+}
+
+#eventos h3 {
+	transition: 0.5s all;
+}
+
+#eventos h3:hover {
+	transform: scale(1.1);
+}
 
 /* ------------- MAIN - GANHADORES ------------- */
 
@@ -147,21 +180,6 @@ img {
 #videos {
 	background: #b3cdd1;
 }
-/* ------------- MAIN - JOGO ------------- */
-
-#jogo {
-	background-color: #b3cdd1;
-}
-
-.jogo {
-	width: 700px;
-	height: 400px;
-	background-color: #888;
-}
-
-.jogo p {
-	text-align: center;
-}
 
 /* ------------------ FOOTER ----------------- */
 
@@ -185,7 +203,7 @@ img {
 }
 
 .cientistas:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .nome-cientistas p {
@@ -201,35 +219,79 @@ img {
 	margin-top: 10px;
 }
 
+iframe {
+	width: 100%;
+	margin: 20px;
+}
 /* ------------------ PAGINA SOBRE NOS ----------------- */
+
+#alunos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.aluno img {
+	display: block;
+	border-radius: 15px 15px 0px 0px;
+	width: 100%;
+	border: none;
+}
 
 .aluno p {
 	text-align: justify;
+	margin: 0px 15px 15px 15px;
 }
 
 .aluno {
-	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 32%;
 	border-radius: 15px;
+	min-width: 300px;
 	box-shadow: 0px 1px 3px;
 	transition: 0.5s all;
 	background: #fefefe;
+	padding-bottom: 15px;
+}
+
+.icones {
+	display: flex;
+	width: 90%;
+	justify-content: flex-start;
+}
+
+.icones a {
+	text-decoration: none;
+	color: #555;
+	margin-right: 10px;
+	transition: 0.5s all;
+}
+
+.icones a:hover {
+	transform: scale(1.05);
+}
+
+.icones i {
+	font-size: 2.5em;
 }
 
 .aluno:hover {
 	transform: scale(1.05);
 }
 
-.aluno h2 {
-	padding: 10px 0 10px;
+.aluno h3 {
+	margin: 20px 0;
 }
 
-#sobre-nos img {
-	width: 300px;
+.logo {
 	border: none;
 	border-radius: 0px;
 }
+
 /* ------------------ MEDIA QUERIES ----------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 	.titulo-1 p,
 	.titulo-2 p {
 		text-align: center;
@@ -240,17 +302,44 @@ img {
 		text-align: justify;
 	}
 
-	#eventos h1 {
+	#eventos h2 {
 		margin-bottom: 30px;
 	}
 
 	#eventos p {
 		text-align: justify;
 	}
+
+	#alunos {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.aluno:hover {
+		transform: none;
+	}
+	.aluno {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 767.9px) {
+	.cientistas:hover {
+		transform: none;
+	}
+
+	.cientistas img {
+		width: 70%;
+	}
 }
 
 @media screen and (max-width: 450px) {
-	.titulo {
+	.menu h1 {
 		font-size: 60%;
+	}
+
+	.cientistas img {
+		width: 90%;
 	}
 }
