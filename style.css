@@ -347,14 +347,23 @@ iframe {
 	.cientistas img {
 		width: 70%;
 	}
+
+	#jogo iframe {
+		width: 95%;
+	}
 }
 
 @media screen and (max-width: 450px) {
 	.menu h1 {
-		font-size: 60%;
+		font-size: 2em;
 	}
 
 	.cientistas img {
 		width: 90%;
+	}
+
+	#sobre-nos h2 {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 	}
 }
