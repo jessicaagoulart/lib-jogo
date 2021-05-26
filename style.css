@@ -283,6 +283,7 @@ iframe {
 	display: flex;
 	width: 90%;
 	justify-content: flex-start;
+	align-content: center;
 }
 
 .icones a {
