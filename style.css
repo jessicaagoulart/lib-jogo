@@ -343,6 +343,10 @@ iframe {
 		width: 80%;
 		margin-bottom: 30px;
 	}
+
+	.aluno:first-child {
+		margin-right: 0px;
+	}
 }
 @media screen and (max-width: 767.9px) {
 	.cientistas:hover {
