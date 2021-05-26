@@ -235,7 +235,7 @@ iframe {
 
 #alunos {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 #sobre-nos h2 {
@@ -269,6 +269,10 @@ iframe {
 	transition: 0.5s all;
 	background: #fefefe;
 	padding-bottom: 15px;
+}
+
+.aluno:first-child {
+	margin-right: 30px;
 }
 
 .aluno:hover {
@@ -348,14 +352,23 @@ iframe {
 	.cientistas img {
 		width: 70%;
 	}
+
+	#jogo iframe {
+		width: 95%;
+	}
 }
 
 @media screen and (max-width: 450px) {
 	.menu h1 {
-		font-size: 60%;
+		font-size: 2em;
 	}
 
 	.cientistas img {
 		width: 90%;
+	}
+
+	#sobre-nos h2 {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 	}
 }
