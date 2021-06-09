@@ -32,6 +32,11 @@ h3 {
 	padding: 30px;
 }
 
+.menu h2 {
+	color: white;
+	margin-bottom: 30px;
+}
+
 .menu {
 	background-color: #6c464f;
 }
