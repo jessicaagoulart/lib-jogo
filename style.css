@@ -92,7 +92,7 @@ h3 {
 #eventos a {
 	color: black;
 	text-decoration: none;
-	font-weight: 600;
+	font-style: italic;
 }
 
 /* ------------- MAIN - JOGO ------------- */
@@ -103,6 +103,33 @@ h3 {
 	justify-content: center;
 	flex-direction: column;
 	align-content: center;
+	padding-bottom: 20px;
+}
+
+#jogo p {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#jogo a {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	width: 150px;
+	margin: 15px 0px 5px 0px;
+	border-radius: 25px;
+	background: linear-gradient(#6c464f, #a76e7b);
+	border: none;
+	padding: 5px 0px 5px 0;
+	color: white;
+	text-decoration: none;
+	box-shadow: 1px 0px 4px black;
+	transition: ease 0.5s;
+}
+
+#jogo a:hover {
+	transform: scale(0.99);
+	box-shadow: none;
 }
 
 #jogo iframe {
@@ -207,6 +234,12 @@ img {
 
 /* ------------------ PAGINA GANHADORES ----------------- */
 
+.ganhadores a {
+	font-style: italic;
+	color: black;
+	text-decoration: none;
+}
+
 .cientistas img {
 	width: 100%;
 }
@@ -292,6 +325,7 @@ iframe {
 	display: flex;
 	width: 90%;
 	justify-content: flex-start;
+	align-content: center;
 }
 
 .icones a {
@@ -346,6 +380,10 @@ iframe {
 	.aluno {
 		width: 80%;
 		margin-bottom: 30px;
+	}
+
+	.aluno:first-child {
+		margin-right: 0px;
 	}
 }
 @media screen and (max-width: 767.9px) {
